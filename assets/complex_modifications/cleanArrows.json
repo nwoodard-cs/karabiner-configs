@@ -1,0 +1,49 @@
+{
+  "title": "Ignore modifier keys on up/down arrow",
+  "rules": [
+    {
+      "description": "Ignore command/control on up arrow",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "up_arrow",
+            "modifiers": {
+              "optional": [
+                "command",
+                "control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "up_arrow"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Ignore command/control on down arrow",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "down_arrow",
+            "modifiers": {
+              "optional": [
+                "command",
+                "control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "down_arrow",
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
